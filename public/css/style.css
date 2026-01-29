@@ -1,0 +1,273 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+    justify-content: space-evenly !important;
+    align-items: center;
+    flex: wrap;
+    /* gap: 10px; */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
+
+
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+    color: #222222;
+}
+
+.f-info-social i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+
+}
+
+.f-info-links,
+.f-info-social,
+.f-info-brand {
+    width: 100%;
+    vertical-align: middle;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+}
+
+.social-media {
+    color: black !important;
+}
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+
+}
+
+.signup-login-drop {
+    position: relative;
+    right: 0 !important;
+    top: 100% !important;
+    width: 200px !important;
+    z-index: 1000 !important;
+    max-width: 90vh !important;
+    margin-left: auto !important;
+}
+
+.dropdown-toggle {
+    position: relative;
+    /* right: 0 !important; */
+    /* top: 100% !important; */
+    width: 100px !important;
+    z-index: 1000 !important;
+    max-width: 90vh !important;
+    margin-left: auto !important;
+
+}
+
+.dropdown-menu {
+    font-size: 0.9rem !important;
+    justify-content: center !important;
+}
+
+.dropdown-item {
+    align-items: center !important;
+    gap: 10px !important;
+    font-size: 0.9rem !important;
+}
+
+.host {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+.show-card,
+.map-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text {
+    font-weight: 400 !important
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+.show-img {
+    height: 30vh;
+}
+
+.btns {
+    display: flex;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#listing-map {
+    display: flex;
+    height: 50vh;
+    width: 100vh;
+    justify-content: center;
+
+}
+
+/* This part is added for tax toggle feature */
+
+#filters {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.filter {
+    text-align: center;
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filter span {
+    font-size: 0.8rem;
+}
+
+.tax-info {
+    display: none;
+}
+
+/* .signup-login-drop {
+    position: relative;
+    right: 0 !important;
+    top: 100% !important;
+    width: 200px !important;
+    z-index: 1000 !important;
+    max-width: 90vh !important;
+    margin-left: auto !important;
+} */
+
+.tax-toggle {
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 1.8rem;
+    width: 8rem;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: space-evenly;
+    /* padding-right: 1rem; */
+    /* padding-left: 0.2rem; */
+    margin-right: 1rem;
+    margin-left: auto;
+    display: flex;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.btn-search {
+    /* width: 5rem !important; */
+    background-color: #fe424d !important;
+    color: white !important;
+    border-radius: 25px !important;
+    padding: 0 1rem 0 1rem !important;
+    font-size: 0.8rem !important;
+}
+
+.btn-search i {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.searchinput {
+    border-radius: 25px !important;
+    padding: 0.25rem 3rem 0.25rem 3rem !important;
+    font-size: 0.8rem !important;
+}
+
+.checkbox {
+    /* padding-bottom: 1rem; */
+    margin-top: 0.1rem;
+    text-align: center;
+    position: relative !important;
+    z-index: 10 !important;
+
+}
+
+.form-check-input {
+    margin-top: 0.4rem !important;
+    /* margin-right: 0.02rem !important; */
+
+}
