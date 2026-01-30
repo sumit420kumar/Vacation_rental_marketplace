@@ -92,6 +92,9 @@ app.use("/listings/:id/reviews", reviewsrouter); // abhi na is route ke path se 
 app.use("/", userrouter);
 // routes folder ke pass tak ja hi nahi rahi hai is ke liye router ka ak method ka use karenge 
 // jab koi route ya path na mile tab ye call hoga use app review.js file me ja kar read karen
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
 app.all('/*splat', (req, res, next) => {
     next(new Expresserror(404, "404 - Page not found"));
 
