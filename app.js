@@ -100,7 +100,7 @@ app.all('/*splat', (req, res, next) => {
 // this is Error middleware 
 app.use((err, req, res, next) => {
     let { statuscode = 500, message = "Something went Wrong!" } = err;
-    res.status(statuscode).render("error.ejs", { err });
+    res.status(statuscode).render("error.ejs", { err, message });
 });
 
 app.listen(port, (req, res) => {
