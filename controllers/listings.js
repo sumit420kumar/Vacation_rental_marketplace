@@ -5,6 +5,12 @@ const { options } = require("joi");
 // const apiKey = 'e8c5a337f4ff4b319f1c448d92b501e6';
 // const axios = require('axios');
 
+module.exports.index = async (req, res) => {
+    const allListing = await Listing.find({});
+    res.render("listings/index.ejs", { allListing });
+};
+
+
 module.exports.search = async (req, res) => {
     try {
         // console.log(req.query);   for check what is come in query
@@ -35,10 +41,6 @@ module.exports.privacy = async (req, res) => {
 };
 
 
-module.exports.index = async (req, res) => {
-    const allListing = await Listing.find({});
-    res.render("listings/index.ejs", { allListing });
-};
 
 module.exports.renderNewForm = (req, res) => {
     res.render("listings/new.ejs");

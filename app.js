@@ -85,9 +85,9 @@ app.use((req, res, next) => {
 
 // ab hamre sare route is ke base par kaam kar rahe hai kyun ki ham ab use kar rahe hai
 //  router folder me likhe huye route ko jo require kiye hai "listings";
+app.use("/listings", listingsrouter);
 app.use("/privacy", listingsrouter);
 app.use("/searching", listingsrouter);
-app.use("/listings", listingsrouter);
 app.use("/listings/:id/reviews", reviewsrouter); // abhi na is route ke path se id jo hai vo app.js ke pass hi rah jaa rahi hai 
 app.use("/", userrouter);
 // routes folder ke pass tak ja hi nahi rahi hai is ke liye router ka ak method ka use karenge 
